@@ -17,69 +17,18 @@ namespace Maytinhkiemtra
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-        }
-
-        private void Calculate(string operation)
-        {
-            double number1, number2;
-
-            // Kiểm tra và chuyển đổi giá trị đầu vào
-            if (double.TryParse(txtso1.Text, out number1) && double.TryParse(txtso2.Text, out number2))
-            {
-                double result = 0;
-
-                // Thực hiện phép toán dựa trên tham số operation
-                switch (operation)
-                {
-                    case "+":
-                        result = number1 + number2;
-                        break;
-                    case "-":
-                        result = number1 - number2;
-                        break;
-                    case "*":
-                        result = number1 * number2;
-                        break;
-                    case "/":
-                        if (number2 != 0)
-                            result = number1 / number2;
-                        else
-                            MessageBox.Show("Không thể chia cho 0!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                        break;
-                }
-
-                txtKQ.Text = result.ToString();
-            }
-            else
-            {
-                MessageBox.Show("Vui lòng nhập số hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
         private void btnCong_Click(object sender, EventArgs e)
         {
-            Calculate("+");
+            // Chuyển giá trị từ TextBox sang số nguyên (int)
+            int so1 = int.Parse(txtso1.Text);
+            int so2 = int.Parse(txtso2.Text);
+
+            // Thực hiện phép tính cộng
+            int ketQua = so1 + so2;
+
+            // Hiển thị kết quả lên Label
+            txtKQ.Text = ketQua.ToString();
         }
 
-        private void btnTru_Click(object sender, EventArgs e)
-        {
-            Calculate("-");
-        }
-
-        private void btnNhan_Click(object sender, EventArgs e)
-        {
-            Calculate("*");
-        }
-
-        private void btnChia_Click(object sender, EventArgs e)
-        {
-            Calculate("/");
-        }
     }
-     private void btnTru_Click(object sender, EventArgs e)
-        {
-            Calculate("-");
-        }
 }

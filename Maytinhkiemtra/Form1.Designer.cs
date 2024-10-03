@@ -106,7 +106,7 @@
             this.btnTru.TabIndex = 10;
             this.btnTru.Text = "-";
             this.btnTru.UseVisualStyleBackColor = true;
-            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
+            //this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
             // 
             // btnCong
             // 
@@ -126,7 +126,7 @@
             this.btnChia.TabIndex = 8;
             this.btnChia.Text = "/";
             this.btnChia.UseVisualStyleBackColor = true;
-            this.btnChia.Click += new System.EventHandler(this.btnChia_Click);
+           // this.btnChia.Click += new System.EventHandler(this.btnChia_Click);
             // 
             // btnNhan
             // 
@@ -136,7 +136,7 @@
             this.btnNhan.TabIndex = 7;
             this.btnNhan.Text = "*";
             this.btnNhan.UseVisualStyleBackColor = true;
-            this.btnNhan.Click += new System.EventHandler(this.btnNhan_Click);
+           // this.btnNhan.Click += new System.EventHandler(this.btnNhan_Click);
             // 
             // Form1
             // 
@@ -156,7 +156,7 @@
             this.Controls.Add(this.btnNhan);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            //this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
