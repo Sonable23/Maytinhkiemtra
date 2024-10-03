@@ -17,4 +17,8 @@ namespace Maytinhkiemtra
             InitializeComponent();
         }
     }
+     private void btnTru_Click(object sender, EventArgs e)
+        {
+            Calculate("-");
+        }
 }
