@@ -21,4 +21,18 @@ namespace Maytinhkiemtra
         {
             Calculate("-");
         }
+
+        private void btnSubtract_Click(object sender, EventArgs e)
+        {
+            double number1, number2;
+            if (double.TryParse(txtNumber1.Text, out number1) && double.TryParse(txtNumber2.Text, out number2))
+            {
+                double result = number1 - number2;
+                txtResult.Text = result.ToString();
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng nhập số hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
 }
