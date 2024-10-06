@@ -66,17 +66,5 @@ namespace Maytinhkiemtra
             }
         }
 
-
-        //phep tinh tru cua Loc add vao sau doan nay
-        private void btnTru_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        //phep tinh cong cua nguyen add vao sau doan nay
-        private void btnCong_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
