@@ -17,20 +17,33 @@ namespace Maytinhkiemtra
             InitializeComponent();
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void btnChia_Click(object sender, EventArgs e)
         {
-        }
-      private void btnTru_Click(object sender, EventArgs e)
-        {
-            double number1, number2;
-            if (double.TryParse(txtNumber1.Text, out number1) && double.TryParse(txtNumber2.Text, out number2))
+            try
             {
-                double result = number1 - number2;
-                txtResult.Text = result.ToString();
+                // Lấy giá trị từ các TextBox và chuyển sang kiểu số
+                double so1 = Convert.ToDouble(txtso1.Text);
+                double so2 = Convert.ToDouble(txtso2.Text);
+
+                // Kiểm tra chia cho 0
+                if (so2 == 0)
+                {
+                    MessageBox.Show("Không thể chia cho 0", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+
+                // Thực hiện phép chia
+                double ketQua = so1 / so2;
+
+                // Hiển thị kết quả ra TextBox hoặc Label
+                txtKQ.Text = ketQua.ToString();
             }
-            else
+            catch (FormatException)
             {
-                MessageBox.Show("Vui lòng nhập số hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Vui lòng nhập số hợp lệ", "Lỗi định dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+
+
+    }
 }
