@@ -19,8 +19,9 @@ namespace Maytinhkiemtra
         private void Form1_Load(object sender, EventArgs e)
         {
         }
-        //phep tinh cong cua nguyen add vao sau doan nay
-        //phep tinh tru cua Loc add vao sau doan nay
+
+
+
         //phep tinh nhan cua son
         private void btnNhan_Click(object sender, EventArgs e)
         {
@@ -65,5 +66,17 @@ namespace Maytinhkiemtra
             }
         }
 
+
+        //phep tinh tru cua Loc add vao sau doan nay
+        private void btnTru_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //phep tinh cong cua nguyen add vao sau doan nay
+        private void btnCong_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
