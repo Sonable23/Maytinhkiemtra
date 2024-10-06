@@ -17,24 +17,22 @@ namespace Maytinhkiemtra
             InitializeComponent();
         }
 
-<<<<<<< HEAD
         private void Form1_Load(object sender, EventArgs e)
         {
         }
       private void btnTru_Click(object sender, EventArgs e)
         {
             double number1, number2;
-            if (double.TryParse(txtNumber1.Text, out number1) && double.TryParse(txtNumber2.Text, out number2))
+            if (double.TryParse(txtso1.Text, out number1) && double.TryParse(txtso2.Text, out number2))
             {
                 double result = number1 - number2;
-                txtResult.Text = result.ToString();
+                txtKQ.Text = result.ToString();
             }
             else
             {
                 MessageBox.Show("Vui lòng nhập số hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-=======
         private void btnChia_Click(object sender, EventArgs e)
         {
             try
@@ -61,8 +59,5 @@ namespace Maytinhkiemtra
                 MessageBox.Show("Vui lòng nhập số hợp lệ", "Lỗi định dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
-
-
     }
->>>>>>> tinh nang chia
 }
