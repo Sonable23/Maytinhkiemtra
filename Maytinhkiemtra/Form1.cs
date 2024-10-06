@@ -20,11 +20,14 @@ namespace Maytinhkiemtra
         {
         }
       private void btnTru_Click(object sender, EventArgs e)
+
+        private void btnNhan_Click(object sender, EventArgs e)
         {
             double number1, number2;
             if (double.TryParse(txtso1.Text, out number1) && double.TryParse(txtso2.Text, out number2))
             {
                 double result = number1 - number2;
+                double result = number1 * number2;
                 txtKQ.Text = result.ToString();
             }
             else
@@ -59,5 +62,7 @@ namespace Maytinhkiemtra
                 MessageBox.Show("Vui lòng nhập số hợp lệ", "Lỗi định dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
+        }   
+
     }
 }

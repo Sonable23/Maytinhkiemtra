@@ -114,7 +114,7 @@
             this.btnTru.TabIndex = 10;
             this.btnTru.Text = "-";
             this.btnTru.UseVisualStyleBackColor = true;
-            this.btnTru.Click += new System.EventHandler(this.btnTru_Click);
+
             // 
             // btnCong
             // 
