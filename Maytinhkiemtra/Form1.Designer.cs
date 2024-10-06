@@ -116,7 +116,7 @@
             this.btnCong.TabIndex = 9;
             this.btnCong.Text = "+";
             this.btnCong.UseVisualStyleBackColor = true;
-            this.btnCong.Click += new System.EventHandler(this.btnCong_Click);
+
             // 
             // btnChia
             // 
@@ -126,7 +126,7 @@
             this.btnChia.TabIndex = 8;
             this.btnChia.Text = "/";
             this.btnChia.UseVisualStyleBackColor = true;
-            this.btnChia.Click += new System.EventHandler(this.btnChia_Click);
+
             // 
             // btnNhan
             // 
@@ -136,7 +136,7 @@
             this.btnNhan.TabIndex = 7;
             this.btnNhan.Text = "*";
             this.btnNhan.UseVisualStyleBackColor = true;
-            this.btnNhan.Click += new System.EventHandler(this.btnNhan_Click);
+
             // 
             // Form1
             // 
