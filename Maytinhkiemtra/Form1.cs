@@ -21,6 +21,8 @@ namespace Maytinhkiemtra
         {
         }
 
+
+
         private void btnNhan_Click(object sender, EventArgs e)
         {
             double number1, number2;
@@ -34,6 +36,7 @@ namespace Maytinhkiemtra
                 MessageBox.Show("Vui lòng nhập số hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }   
+
 
     }
 }
