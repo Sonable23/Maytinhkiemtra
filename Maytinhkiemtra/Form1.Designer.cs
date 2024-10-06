@@ -114,7 +114,6 @@
             this.btnTru.TabIndex = 10;
             this.btnTru.Text = "-";
             this.btnTru.UseVisualStyleBackColor = true;
-
             // 
             // btnCong
             // 
@@ -146,6 +145,7 @@
             this.btnNhan.TabIndex = 7;
             this.btnNhan.Text = "*";
             this.btnNhan.UseVisualStyleBackColor = true;
+            this.btnNhan.Click += new System.EventHandler(this.btnNhan_Click);
             // 
             // Form1
             // 
