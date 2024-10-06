@@ -34,34 +34,6 @@ namespace Maytinhkiemtra
             {
                 MessageBox.Show("Vui lòng nhập số hợp lệ!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
-
-        private void btnChia_Click(object sender, EventArgs e)
-        {
-            try
-            {
-                // Lấy giá trị từ các TextBox và chuyển sang kiểu số
-                double so1 = Convert.ToDouble(txtso1.Text);
-                double so2 = Convert.ToDouble(txtso2.Text);
-
-                // Kiểm tra chia cho 0
-                if (so2 == 0)
-                {
-                    MessageBox.Show("Không thể chia cho 0", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                // Thực hiện phép chia
-                double ketQua = so1 / so2;
-
-                // Hiển thị kết quả ra TextBox hoặc Label
-                txtKQ.Text = ketQua.ToString();
-            }
-            catch (FormatException)
-            {
-                MessageBox.Show("Vui lòng nhập số hợp lệ", "Lỗi định dạng", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
-        }
-
+        }   
     }
 }
