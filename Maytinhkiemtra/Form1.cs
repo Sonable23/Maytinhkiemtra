@@ -33,7 +33,7 @@ namespace Maytinhkiemtra
             }
         }
 
-        private void btnChia_Click(object sender, EventArgs e)
+        private void btnChia_Click_1(object sender, EventArgs e)
         {
             try
             {

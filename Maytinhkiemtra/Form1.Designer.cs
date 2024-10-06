@@ -84,7 +84,7 @@
             // txtso2
             // 
             this.txtso2.Location = new System.Drawing.Point(339, 158);
-            this.txtso2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtso2.Margin = new System.Windows.Forms.Padding(2);
             this.txtso2.Name = "txtso2";
             this.txtso2.Size = new System.Drawing.Size(76, 20);
             this.txtso2.TabIndex = 13;
@@ -92,7 +92,7 @@
             // txtKQ
             // 
             this.txtKQ.Location = new System.Drawing.Point(270, 271);
-            this.txtKQ.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtKQ.Margin = new System.Windows.Forms.Padding(2);
             this.txtKQ.Name = "txtKQ";
             this.txtKQ.Size = new System.Drawing.Size(76, 20);
             this.txtKQ.TabIndex = 11;
@@ -100,7 +100,7 @@
             // txtso1
             // 
             this.txtso1.Location = new System.Drawing.Point(188, 158);
-            this.txtso1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtso1.Margin = new System.Windows.Forms.Padding(2);
             this.txtso1.Name = "txtso1";
             this.txtso1.Size = new System.Drawing.Size(76, 20);
             this.txtso1.TabIndex = 12;
@@ -108,7 +108,7 @@
             // btnTru
             // 
             this.btnTru.Location = new System.Drawing.Point(339, 203);
-            this.btnTru.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnTru.Margin = new System.Windows.Forms.Padding(2);
             this.btnTru.Name = "btnTru";
             this.btnTru.Size = new System.Drawing.Size(56, 19);
             this.btnTru.TabIndex = 10;
@@ -119,7 +119,7 @@
             // btnCong
             // 
             this.btnCong.Location = new System.Drawing.Point(188, 203);
-            this.btnCong.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnCong.Margin = new System.Windows.Forms.Padding(2);
             this.btnCong.Name = "btnCong";
             this.btnCong.Size = new System.Drawing.Size(56, 19);
             this.btnCong.TabIndex = 9;
@@ -129,17 +129,18 @@
             // btnChia
             // 
             this.btnChia.Location = new System.Drawing.Point(339, 227);
-            this.btnChia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnChia.Margin = new System.Windows.Forms.Padding(2);
             this.btnChia.Name = "btnChia";
             this.btnChia.Size = new System.Drawing.Size(56, 19);
             this.btnChia.TabIndex = 8;
             this.btnChia.Text = "/";
             this.btnChia.UseVisualStyleBackColor = true;
+            this.btnChia.Click += new System.EventHandler(this.btnChia_Click_1);
             // 
             // btnNhan
             // 
             this.btnNhan.Location = new System.Drawing.Point(188, 227);
-            this.btnNhan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btnNhan.Margin = new System.Windows.Forms.Padding(2);
             this.btnNhan.Name = "btnNhan";
             this.btnNhan.Size = new System.Drawing.Size(56, 19);
             this.btnNhan.TabIndex = 7;
@@ -162,7 +163,7 @@
             this.Controls.Add(this.btnCong);
             this.Controls.Add(this.btnChia);
             this.Controls.Add(this.btnNhan);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
